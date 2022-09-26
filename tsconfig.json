@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@globalComponents/*": ["src/1.components_global/*"],
+      "@icons/*": ["src/1.components_global/icons/*"],
+      "@layouts/*": ["src/1.components_global/layouts/*"],
+      "@containers/*": ["src/2.containers/*"],
+      "@styls/*": ["src/3.styles/*"],
+      "@services/*": ["src/4.services/*"],
+      "@redux/*": ["src/5.redux/*"],
+      "@models/*": ["src/6.models/*"],
+      "@utils/*": ["src/7.utils/*"],
+      "@constants": ["src/8.constants"],
+      "@store/*": ["src/store/*"],
+      "@config/*": ["src/9.config/*"],
+      "@pages/*": ["src/pages/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
