@@ -1,41 +1,9 @@
-ts_next_redux-toolkit-saga-persist-nextWrapper_storybook_axios_styledComponents
+# 내가 빨리 쓰려고 만들어 놓은 보일러플레이트
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+작은 프로젝트 하다가 환경 설정하는데 한 세월 걸려서 셋팅함...
 
-## Getting Started
+## 전반적인 구성
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-npm i -D babel-plugin-styled-components @typescript-eslint/eslint-plugin @types/styled-components
-
-npm i next-redux-wrapper next-themes react-redux redux-persist redux-saga styled-components styled-reset
-# quick_start_-boilerplate
+1. typescript
+2. redux (toolkit, saga, persist, next-redux-wrapper)
+3. styled-components
