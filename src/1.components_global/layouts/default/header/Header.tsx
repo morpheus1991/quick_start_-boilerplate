@@ -1,21 +1,8 @@
-import Link from "next/link"
-import { useRouter } from "next/router"
-import React, { FC, useEffect, useState } from "react"
-import { useDispatch } from "react-redux"
+import React, { FC } from "react"
 
 import * as S from "./Header.style"
-interface Props {
-  toggleTheme: () => void
-}
-const Header: FC<Props> = ({ toggleTheme }) => {
-  const router = useRouter()
-
-  const isMyVideoPage = router.route === "/myVideo"
-  const linkHref = isMyVideoPage ? "/" : "/myVideo"
-  const linkText = isMyVideoPage ? "home" : "my video"
-
-  const dispatch = useDispatch()
-
+interface Props {}
+const Header: FC<Props> = () => {
   return (
     <S.Wrapper>
       <div className="HeaderContainer">

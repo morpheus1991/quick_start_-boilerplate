@@ -1,17 +1,16 @@
-import React, { FC, ReactNode } from 'react'
-import Footer from './footer/Footer'
-import Header from './header/Header'
-import * as S from './DefaultLayout.style'
+import React, { FC, ReactNode } from "react"
+import Footer from "./footer/Footer"
+import Header from "./header/Header"
+import * as S from "./DefaultLayout.style"
 interface Props {
   children: ReactNode
-  toggleTheme: () => void
 }
-const DefaultLayout: FC<Props> = ({ children, toggleTheme }) => {
+const DefaultLayout: FC<Props> = ({ children }) => {
   return (
     <S.Wrapper>
       <S.Container>
         <div className="header__wrapper">
-          <Header toggleTheme={toggleTheme} />
+          <Header />
         </div>
         <div className="contents__wrapper">
           <main>{children}</main>

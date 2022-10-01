@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { device, ThemeType } from '../../../3.styles/theme'
+import styled from "styled-components"
+import { device, ThemeType } from "../../../3.styles/theme"
 
 export const Wrapper = styled.div`
   background: ${({ theme }: { theme: ThemeType }) => {

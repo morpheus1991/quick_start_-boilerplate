@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { device } from '../../../../3.styles/theme'
+import styled from "styled-components"
+import { device } from "../../../../3.styles/theme"
 
 export const Wrapper = styled.header`
   width: 100%;
