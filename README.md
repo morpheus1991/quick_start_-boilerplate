@@ -7,3 +7,4 @@
 1. typescript
 2. redux (toolkit, saga, persist, next-redux-wrapper)
 3. styled-components
+4. lint / husky 설정 완료
