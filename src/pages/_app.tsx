@@ -6,26 +6,30 @@ import { ReduxStore, reduxWrapper } from "../5.redux/store"
 import Head from "next/head"
 import { GlobalStyle } from "../3.styles/globalsStyle"
 import DefaultLayout from "../1.components_global/layouts/default/DefaultLayout"
+import { useTheme } from "@utils/hooks/useTheme"
+import { dark, light } from "@styls/theme"
+import { ThemeProvider } from "styled-components"
 // import { dark, light } from "@styls/theme"
 
 const App = ({ Component, pageProps }: AppProps) => {
   const reduxStore = useStore()
 
-  // const [themeMode, toggleTheme] = useTheme() // hook 함수 하용
-  // const theme = themeMode === "dark" ? dark : light
+  // eslint-disable-next-line no-unused-vars
+  const [themeMode, toggleTheme] = useTheme() // hook 함수 하용
+  const theme = themeMode === "dark" ? dark : light
 
   return (
     <>
       <PersistGate loading={null} persistor={(reduxStore as ReduxStore).reduxPersistData}>
-        {/* <ThemeProvider theme={theme}> */}
-        <GlobalStyle />
-        <Head>
-          <title>name</title>
-        </Head>
-        <DefaultLayout>
-          <Component {...pageProps} />
-        </DefaultLayout>
-        {/* </ThemeProvider> */}
+        <ThemeProvider theme={theme}>
+          <GlobalStyle />
+          <Head>
+            <title>name</title>
+          </Head>
+          <DefaultLayout>
+            <Component {...pageProps} />
+          </DefaultLayout>
+        </ThemeProvider>
       </PersistGate>
     </>
   )
